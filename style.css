@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+body{
+    margin: 1%;
+    font-family: Roboto Condensed;
+    display: flex;
+    justify-content: center;
+    background-image:url(img/background-image.jpg);
+    background-repeat: round;
+}
+
+.clock{
+    display: flex;
+    width: 1280px;
+    height: 691px;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background-color:#8bc63e18 ;
+}
+
+.background{
+    display: flex;
+    width: 1100px;
+    height: 500px;
+    margin-left: 2cm;
+    margin-top: 2cm;
+    background-color: #0514276c;
+    border: none;
+    border-radius: 20px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1cm;
+    width: 380px;
+    height: 490px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color:#83c131b8;
+    color: white;
+    box-shadow: 0px 30px 40px -12px rgb(0, 0, 0);
+}
+
+.box-user input {
+    font-size: 14px;
+    width: 240px;
+    height: 33px;
+    padding: 0px 20px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.box-user label {
+    display: flex;
+    margin-top: -.8cm;
+    margin-left: .5cm;
+    color: #000000;
+    font-size: 20px;
+    pointer-events: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.box-user input:focus~label,
+.box-user input:valid~label {
+    margin-top: -1.8cm;
+    margin-left: .5cm;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.box-password{
+    margin-top: 2cm;
+}
+
+.box-password input {
+    font-size: 14px;
+    width: 240px;
+    height: 33px;
+    padding: 0px 20px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.box-password label {
+    display: flex;
+    margin-top: -.8cm;
+    margin-left: .5cm;
+    color: #000000;
+    font-size: 20px;
+    pointer-events: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.box-password input:focus~label,
+.box-password input:valid~label {
+    margin-top: -1.8cm;
+    margin-left: .5cm;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.box-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2cm;
+}
+
+.box-button button {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: #557ffe;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: #181e26;
+    box-shadow: #557ffe 5px 10px 30px -11px;
+}
+
+.box-button label {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.box-button a {
+    margin-top: -20px;
+    margin-left: 4.3cm;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #181e26;
+    text-decoration-line: none;
+}
+
+.box-button a:hover {
+    color: white;
+}
+
+.new-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-left: 16cm;
+    margin-top: .2cm;
+    width: 380px;
+    height: 490px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color:#83c131b8;
+    color: white;
+    box-shadow: 0px 30px 40px -12px rgb(0, 0, 0);
+}
+
+.new-user {
+    margin-top: 1cm;
+}
+
+.new-user input {
+    font-size: 14px;
+    width: 240px;
+    height: 33px;
+    padding: 0px 20px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.new-user label {
+    display: flex;
+    margin-top: -.8cm;
+    margin-left: .5cm;
+    color: #000000;
+    font-size: 20px;
+    pointer-events: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.new-user input:focus~label,
+.new-user input:valid~label{
+    margin-top: -1.5cm;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.new-password {
+    margin-top: 2cm;
+}
+
+.new-password input{
+    font-size: 14px;
+    width: 240px;
+    height: 33px;
+    padding: 0px 20px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.new-password label{
+    display: flex;
+    margin-top: -.8cm;
+    margin-left: .5cm;
+    color: #000000;
+    font-size: 20px;
+    pointer-events: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.new-password input:focus~label,
+.new-password input:valid~label {
+    margin-top: -1.5cm;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.cof-password {
+    margin-top: 1.9cm;
+}
+
+.cof-password #conf-password{
+    font-size: 14px;
+    width: 240px;
+    height: 33px;
+    padding: 0px 20px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.cof-password label {
+    display: flex;
+    margin-top: -.8cm;
+    margin-left: .5cm;
+    color: #000000;
+    font-size: 20px;
+    pointer-events: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.cof-password input:focus~label,
+.cof-password input:valid~label {
+    margin-top: -1.5cm;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.new-button{
+    margin-top: 1.7cm;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-button button{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: #557ffe;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: #181e26;
+    box-shadow: #557ffe 5px 10px 30px -11px;
+}
+
+.new-button a{
+    margin-top: -20px;
+    margin-left: 5cm;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #181e26;
+    text-decoration-line: none;
+}
+
+.new-button label{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.new-button a:hover{
+    color: white;
+}
+
+@media screen and (min-width:412px) and (max-width:767px){ 
+    body{
+        margin: 0%;
+        max-width: 93%;
+        height: 710px;
+        background-position: 1cm ;
+        background-repeat:round;
+    }
+
+    .clock{
+        max-width: 100%;
+        height: auto;
+        margin-left: 0.4cm;
+    }
+
+    .background{
+        height: 570px;
+    }
+
+    .login{
+        margin-left:2.3cm;
+        margin-top: 0.5cm;
+        height: 520px;
+    }
+
+    .box-user label{
+        left:7cm;
+        top: 6.9cm;
+    }
+
+    .box-user input:focus~label,
+    .box-user input:valid~label{
+        top: 5.6cm;
+        left: 6.5cm;
+    }
+
+    .box-password label{
+        left:7cm;
+        top: 9.8cm;
+    }
+
+    .box-password input:focus~label,
+    .box-password input:valid~label{
+        top: 8.6cm;
+        left: 6.5cm;
+    }
+
+    .new-login{
+        margin-left:2.3cm;
+        margin-top: 0.5cm;
+        height: 520px;
+    }
+
+    .new-user label{
+        left:7cm;
+        top: 5.9cm;
+    }
+
+    .new-user input:focus~label,
+    .new-user input:valid~label{
+        top: 4.6cm;
+        left: 6.5cm;
+    }
+
+    .new-password label{
+        left:7cm;
+        top: 8.8cm;
+    }
+
+    .new-password input:focus~label,
+    .new-password input:valid~label{
+        top: 7.6cm;
+        left: 6.5cm;
+    }
+
+    .cof-password label{
+        left:7cm;
+        top: 11.7cm;
+    }
+
+    .cof-password input:focus~label,
+    .cof-password input:valid~label{
+        top: 10.6cm;
+        left: 6.5cm;
+    }
+}
